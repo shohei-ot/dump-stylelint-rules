@@ -1,0 +1,32 @@
+{
+  "name": "stylelint-rules-dump",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "author": "Shohei Ohta <shohei.ot@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "prettier": "prettier ./src/**/*.ts --write",
+    "dev": "tsc --project ./tsconfig.json",
+    "build": "tsc --outFile dist/index.js src/index.ts"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^3.11.2",
+    "@types/lodash": "^4.14.119",
+    "@types/node": "^10.12.12",
+    "husky": "^1.2.0",
+    "jest": "^23.6.0",
+    "lint-staged": "^8.1.0",
+    "prettier": "^1.15.3",
+    "ts-jest": "^23.10.5",
+    "tslint": "^5.11.0",
+    "tslint-config-airbnb": "^5.11.1",
+    "tslint-config-prettier": "^1.17.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "typescript": "^3.2.1"
+  },
+  "dependencies": {
+    "commander": "^2.19.0",
+    "js-yaml": "^3.12.0",
+    "lodash": "^4.17.11"
+  }
+}
