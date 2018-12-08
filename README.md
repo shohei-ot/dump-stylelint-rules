@@ -45,7 +45,7 @@ stylelint-rules-dump --input=./package.json
 ### `--output=<path>`, `-o <path>`
 
 The path for output json.  
-**Default:** nop  
+**Default:** nope  
 
 example:  
 

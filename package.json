@@ -9,6 +9,14 @@
     "dev": "tsc --project ./tsconfig.json",
     "build": "tsc --outFile dist/index.js src/index.ts"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+     "*.ts": ["tslint --fix", "prettier", "git add"]
+  },
   "devDependencies": {
     "@types/js-yaml": "^3.11.2",
     "@types/lodash": "^4.14.119",
