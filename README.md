@@ -1,4 +1,4 @@
-stylelint-rules-dump
+dump-stylelint-rules
 =======================
 
 UNDER CONSTRUCTION.
@@ -29,10 +29,10 @@ npx stylelint-rules-dump
 
 ### `--input=<path>`, `-i <path>`
 
-Path to your stylelint config file.  
-**Default:** Search just under the working directory.  
+Path to your stylelint config file.
+**Default:** Search just under the working directory.
 
-examlpe:  
+examlpe:
 
 ```sh
 stylelint-rules-dump --input=./.stylelintrc
@@ -44,10 +44,10 @@ stylelint-rules-dump --input=./package.json
 
 ### `--output=<path>`, `-o <path>`
 
-The path for output json.  
-**Default:** nope  
+The path for output json.
+**Default:** nope
 
-example:  
+example:
 
 ```sh
 stylelint-rules-dump --output=./my-rules.json
