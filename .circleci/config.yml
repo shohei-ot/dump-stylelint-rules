@@ -31,7 +31,7 @@ jobs:
           key: npm_packages
           when: on_success
       - run: npm run dev
-      - run: npm publish --dry-run
+      - run: npm publish
 
 workflows:
   version: 2
