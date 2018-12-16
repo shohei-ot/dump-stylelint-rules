@@ -1,5 +1,5 @@
 {
-  "name": "stylelint-rules-dump",
+  "name": "dump-stylelint-rules",
   "version": "0.0.1",
   "main": "dist/index.js",
   "author": "Shohei Ohta <shohei.ot@gmail.com>",
@@ -15,7 +15,7 @@
     }
   },
   "lint-staged": {
-     "*.ts": ["tslint --fix", "prettier", "git add"]
+    "*.ts": ["tslint --fix", "prettier", "git add"]
   },
   "devDependencies": {
     "@types/js-yaml": "^3.11.2",

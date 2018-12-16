@@ -1,0 +1,38 @@
+version: 2
+
+# orbs:
+#     hello: circleci/hello-build@0.0.7 # uses the circleci/buildpack-deps Docker image
+
+# workflows:
+#     "Hello Workflow":
+#         jobs:
+#           - hello/hello-build
+
+jobs:
+  build:
+    docker:
+      - image: circleci/node:10.14.2
+    steps:
+      - checkout
+      - run: npm install
+      - run: npm run dev
+  publish:
+    filters:
+      branches:
+        only: master
+    docker:
+      - image: circleci/node:10.14.2
+    steps:
+      - run: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> .npmrc
+      - restore_cache:
+          key: npm_packages
+      - run: npm install
+      - save_cache:
+          paths:
+            - node_modules
+          key: npm_packages
+          when: on_success
+      - run: npm run dev
+      - run: ls -lah
+      - run: npm publish --dry-run
+
