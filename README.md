@@ -1,6 +1,10 @@
 dump-stylelint-rules
 =======================
 
+**under constructing**
+
+---
+
 [![CircleCI](https://circleci.com/gh/shohei-ot/dump-stylelint-rules/tree/master.svg?style=svg)](https://circleci.com/gh/shohei-ot/dump-stylelint-rules/tree/master)
 
 UNDER CONSTRUCTION.
